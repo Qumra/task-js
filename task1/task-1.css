@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 625%;
+}
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+.box {
+    width: 30%;
+    height: 0;
+    padding-bottom: 30%;
+    background-color: #EE9900;
+    margin-left: 2.5%;
+    margin-top: 2.5%;
+    border-radius: 10px;
+}
+.btn1,.btn2 {
+    width: 100%;
+    border-radius: 5px;
+    padding: .2rem 0;
+    outline: none;
+    border: none;
+}
+.btn1 {
+    background-color: #EE9900;
+    color: #fff;
+}
+.btn2 {
+    background-color: #fff;
+    border: 2px solid #EE9900;
+    color: #EE9900;
+}
