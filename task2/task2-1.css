@@ -1,0 +1,107 @@
+.classB, .container .lastgame, .container .content {
+    border: 1px solid #e1e5e7;
+  }
+  
+  header img {
+    width: 0.34rem;
+    height: 0.27rem;
+    margin-left: 0.34rem;
+  }
+  
+  .container {
+    background-color: #f0f0f0;
+    padding: 0.28rem 0.36rem 0.6rem 0.36rem;
+    margin-top: 0.67rem;
+  }
+  
+  .container .lastgame {
+    background-color: #fff;
+    line-height: 1.18rem;
+    font-size: 0.35rem;
+    color: #9a9a9a;
+  }
+  
+  .container .lastgame img {
+    width: 0.24rem;
+    height: 0.4rem;
+    top: 50%;
+    margin-top: -0.2rem;
+    right: 0.15rem;
+  }
+  
+  .container .content {
+    background-color: #fff;
+    margin-top: 0.25rem;
+  }
+  .container .content .tab {
+    display: none;
+  }
+  .container .content .tab.current{
+    display: block;
+  }
+  .container .content .title {
+    line-height: 0.9rem;
+    color: #fbb435;
+    font-size: 0.38rem;
+    border-bottom: 2px solid #fbb435;
+  }
+  
+  .container .content section .version1 {
+    margin-top: 0.3rem;
+    background-color: #29bde0;
+    line-height: 1.34rem;
+    margin-right: 0.55rem;
+    margin-left: 0.55rem;
+  }
+  
+  .container .content section .version1 a {
+    color: #fff;
+    font-size: 0.32rem;
+  }
+  
+  .container .content section .user {
+    line-height: 0.8rem;
+  }
+  
+  .container .content section .user span {
+    font-size: 0.25rem;
+    color: #787878;
+  }
+  
+  .container .content section .pages {
+    width: 0;
+    height: 0;
+    border-top: 0.2rem solid transparent;
+    border-left: 0.3rem solid #fbb435;
+    border-bottom: 0.2rem solid transparent;
+    position: absolute;
+    right: 0.1rem;
+    top: 41%;
+  }
+  .container .content section .last{
+    width: 0;
+    height: 0;
+    border-top: 0.2rem solid transparent;
+    border-right: 0.3rem solid #fbb435;
+    border-bottom: 0.2rem solid transparent;
+    position: absolute;
+    left: 0.1rem;
+    top: 41%;
+  }
+  .container .content ol {
+    width: 1rem;
+    margin: 0 auto;
+    margin-bottom: 0.1rem;
+  }
+  
+  .container .content ol li {
+    width: 0.16rem;
+    height: 0.16rem;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    margin-right: 0.1rem;
+  }
+  
+  .container .content ol li.active {
+    background-color: #29bde0;
+  }

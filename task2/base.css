@@ -1,0 +1,187 @@
+@charset "UTF-8";
+/*清除样式*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, input, a, p, textarea {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+img {
+  border: none;
+}
+
+/*css样式表*/
+/*css为clearfix，清除浮动*/
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+  /*IE/7/6*/
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.al {
+  text-align: left;
+}
+
+.ac {
+  text-align: center;
+}
+
+.ar {
+  text-align: right;
+}
+
+.hide {
+  display: none;
+}
+
+.db {
+  display: block;
+}
+
+.dib {
+  display: inline-block;
+}
+
+.df {
+  display: flex;
+}
+
+.jsb {
+  justify-content: space-between;
+}
+
+.aic {
+  align-items: center;
+}
+
+.pr {
+  position: relative;
+}
+
+.pa {
+  position: absolute;
+}
+
+.pf {
+  position: fixed;
+}
+
+.m0a {
+  margin: 0 auto;
+}
+
+body {
+  font-family: "微软雅黑";
+}
+/* html {
+    font-size:100px;
+} */
+@media only screen and (min-width: 320px) {
+  html {
+    font-size: 44.44444px !important;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  html {
+    font-size: 52.08333px !important;
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  html {
+    font-size: 59.02778px !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 106.66667px !important;
+  }
+}
+
+header {
+  width: 100%;
+  padding: 0.2rem 0;
+  background-color: #29bde0;
+  position: fixed;
+  top: 0;
+  font-size: 0.34rem;
+  color: #fff;
+  z-index: 99;
+  -webkit-transform: translateZ(0);
+}
+html, body {height:100%;overflow:auto;margin: 0;}
+footer {
+  width: 100%;
+  padding: .42rem 0 .6rem 0;
+  position: fixed;
+  bottom: 0;
+  background-color: #29bde0;
+}
+footer .btn {
+  width: 4.9rem;
+  height: 0.9rem;
+  line-height: .9rem;
+  text-align: center;
+  background-color: #fbb435;
+  margin: 0 auto;
+}
+footer .btn a {
+  color: #fff;
+  font-size: .4rem;
+}
+.footer1 {
+  width: 100%;
+  padding: .23rem 0;
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(41, 189, 224, .52); 
+}
+.footer1 .btns {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 .23rem;
+}
+.footer1 .btns .btn1,.footer1 .btns .btn2 {
+  width: 2.7rem;
+  height: 0.87rem;
+  border-radius: .1rem;
+  color: #fff;
+  font-size: .4rem;
+  border: none;
+  outline: none;
+}
+.footer1 .btns a{
+  color: #fff;
+  font-size: .4rem;
+}

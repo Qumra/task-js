@@ -1,5 +1,5 @@
 
-// 4.将随机出来的颜色值分别添加到3个格子的样式上
+
 // 1.获取九宫格中的小格子DOM
 var box = document.getElementsByClassName("box");
 var btn1 =document.getElementById('btn1');
@@ -55,8 +55,16 @@ btn1.onclick = function(){
             arr[i].style.backgroundColor = '#EE9900';
         }
         var box_array = getArrItem(arr, 3);
+        // 4.将随机出来的颜色值分别添加到3个格子的样式上
         for(var i=0;i<3;i++){
+          var b = a;
             box_array[i].style.backgroundColor = getOneColor();
+            var a = box_array[i].style.backgroundColor ;
+            console.log(a);
+            if(a=="rgb(238,153,0)"||a==b){
+                box_array[i].style.backgroundColor = getOneColor();
+            }
+           
         }
     },2000)
    

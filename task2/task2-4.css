@@ -1,0 +1,42 @@
+body {
+    background-color: #29bde0;
+}
+header {
+    border-bottom: 1px solid #74d4eb;
+}
+header .back {
+    width: .25rem;
+    height: .41rem;
+    margin-left: .22rem;
+}
+header .close {
+    width: 0.36rem;
+    height: 0.36rem;
+    margin-right: .22rem;
+}
+.main {
+    padding: 0 .4rem;
+    margin: 1.5rem 0 .55rem;
+    flex-wrap: wrap;
+}
+.main .hbox {
+    width: 26%;
+    margin-bottom: .7rem;
+}
+.main .hbox .box {
+    border: .05rem solid #fff;
+}
+.main .hbox .box .user {
+    background-color: #f5c97b;
+    line-height: 1.2rem;
+    color: #565656;
+    font-size: .3rem;
+    text-align: center;
+}
+.main .hbox .box .num {
+    background-color: #83b09a;
+    height: .3rem;
+    color: #fff;
+    font-size: .23rem;
+    text-align: center;
+}

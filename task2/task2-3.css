@@ -1,0 +1,58 @@
+body {
+    background-color: #29bde0;
+}
+header {
+    border-bottom: 1px solid #74d4eb;
+}
+header .back {
+    width: .25rem;
+    height: .41rem;
+    margin-left: .22rem;
+}
+header .close {
+    width: 0.36rem;
+    height: 0.36rem;
+    margin-right: .22rem;
+}
+.main {
+    padding: 0 .9rem;
+    margin: 1.5rem 0 .55rem;
+}
+.main .card {
+    border: 5px solid #ffffff;
+    background-color: #ffedc5;
+    width: 100%;
+    height: 6.5rem;
+    margin-bottom: 1.25rem;
+    position: relative;
+}
+.main .card img {
+    width: 3rem;
+    height: 3rem;
+    padding-top: 1.65rem;
+}
+.main .card .circle {
+    position: absolute;
+    top:0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: .8rem;
+    height: .8rem;
+    line-height: 0.8rem;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid #ffedc5;
+    color: #f56b81;
+    font-size: .4rem;
+}
+.main .card .send img {
+    width: 2.22rem;
+    height: 2.22rem;
+    padding-top: 1rem;
+}
+.main .card .send p {
+    font-size: .4rem;
+    font-weight: 600;
+    color: #29bde0;
+
+}

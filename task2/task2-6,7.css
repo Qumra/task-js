@@ -1,0 +1,82 @@
+body {
+    background-color: #29bde0;
+}
+header {
+    border-bottom: 1px solid #74d4eb;
+}
+header .tp {
+    width: .39rem;
+    height: 0.4rem;
+    margin-left: .22rem
+  }
+  header .close {
+      width: 0.36rem;
+      height: 0.36rem;
+      margin-right: .22rem
+  }
+  .title {
+    margin-top: 0.75rem;
+    background-color: #b9e9f5;
+    color: #464646;
+    font-size:.26rem; 
+    height: .82rem;
+    line-height: 0.82rem;
+    padding-left: .47rem;
+    position: relative;
+}
+.title span {
+    width: 0;
+    height: 0;
+    border-top: .1rem solid #b9e9f5;
+    border-left: .05rem solid transparent;
+    border-right: .05rem solid transparent;
+    position: absolute;
+    bottom:-.1rem;
+    left: 0.7rem;
+}
+.contain {
+    padding: 0 .4rem 2rem;
+}
+.contain .txt {
+    color: #fff;
+    font-size: .24rem;
+    margin: .25rem 0 .4rem .3rem;
+}
+.main {
+    padding: 0 .4rem;
+    margin: 0 0 .55rem;
+    flex-wrap: wrap;
+}
+.main .hbox {
+    width: 26%;
+    margin-bottom: .7rem;
+    position: relative;
+}
+.main .hbox .box {
+    border: .05rem solid #fff;
+}
+.main .hbox .box .user {
+    background-color: #f5c97b;
+    line-height: 1.2rem;
+    color: #565656;
+    font-size: .3rem;
+    text-align: center;
+}
+.main .hbox .box .num {
+    background-color: #83b09a;
+    height: .3rem;
+    color: #fff;
+    font-size: .23rem;
+    text-align: center;
+}
+.main .hbox img {
+    width: .4rem;
+    height: 0.4rem;
+    position: absolute;
+    top:110%;
+    left: 35%;
+    display: none;
+}
+.main .hbox:hover img {
+    display: block;
+}
