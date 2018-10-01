@@ -90,6 +90,9 @@ header .close {
 }
 .process .day .am p {
     font-size: .3rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: .2rem;
 }
 .process .day .pm{
     position: relative;

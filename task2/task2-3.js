@@ -1,5 +1,5 @@
 $(function () {
-    var data =  JSON.parse(localStorage.getItem("sumPeople"));
+    var data =  JSON.parse(sessionStorage.getItem("sumPeople"));
     console.log(data);
     var clicks = 0;
     $(".btn").click(function () {
@@ -23,7 +23,7 @@ $(function () {
             $(".send").show();
             $("#role").html(`角色:${data[(clicks - 1) / 2].role}`);
             $(".circle").html(`${(clicks + 1) / 2}`);
-            var url ="<meta http-equiv=refresh content=2;url='task2-4.html'></meta>"
+            var url ="<meta http-equiv=refresh content=1;url='task2-4.html'></meta>"
             $(".btn a").html("法官查看").append(url);
         }
     })

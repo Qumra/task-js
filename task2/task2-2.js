@@ -43,7 +43,7 @@ $(function () {
         console.log(disoder_arr);
         var save1 = JSON.stringify(disoder_arr);
         console.log(save1);
-        localStorage.setItem("sumPeople",save1);
+        sessionStorage.setItem("sumPeople",save1);
     }
     $(".btnImg").click(function () {
         let num = $("#num").val();
