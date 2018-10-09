@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>参数设置</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="task2-2.css">
+</head>
+<body>
+    <div class="mask hide">
+        <div class="modal ac">
+            <p>请输入正确的玩家数量</p>
+            <div class="btns df">
+                <div class="confirm">确认</div>
+                <div class="cancel">取消</div>
+            </div>
+        </div>
+    </div>
+    <header class="df jsb">
+        <a href="task2-1.html"><img class="back" src="images/BackIconl.png" alt=""></a> 参数设置
+        <img class="help" src="images/help.png" alt="">
+    </header>
+    <div class="contain">
+        <div class="top ac">
+            玩家配比
+        </div>
+        <div class="mid df">
+            <div class="role df aic">
+               <img src="images/p1.png" alt="">
+                杀手&nbsp;<i id="killer"></i>&nbsp;人
+            </div>
+            <div class="role df aic">
+               <img src="images/p2.png" alt="">
+                平民&nbsp;<i id="people"></i>&nbsp;人
+            </div>
+        </div>
+        <div class="kong"></div>
+        <div class="bottom">
+            <div class="num">请输入玩家人数
+                <input type="text" id="num" value="4">
+                <span>玩家人数为4-18人</span>
+            </div>
+            <div class="select df">
+                <img class="btnImg minus" id="minus" src="images/minus.png" alt="">
+                 <input type="range" step="1" value="0">
+                    <!-- <img class="btn1" src="images/btn1.png" alt=""> -->
+               
+                <img class="btnImg add" id="add" src="images/add.png" alt="">
+            </div>
+        </div>
+        <div class="btn ac"><a href="task2-3.html"> 去发牌</a> </div>
+    </div>
+</body>
+</html>
+<script src="../jquery/dist/jquery.min.js"></script>
+<script src="task2-2.js"></script>

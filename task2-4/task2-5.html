@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>法官台本</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="task2-5.css">
+</head>
+
+<body>
+    <div class="mask hide">
+        <div class="modal ac">
+            <p id="txt">请死者亮明身份并发表遗言</p>
+            <div class="btns df">
+                <div class="confirm">确认</div>
+            </div>
+        </div>
+    </div>
+    <header class="df jsb">
+        <a href="task2-4.html"><img class="back" src="images/BackIconl.png" alt=""></a> 法官日记
+        <img class="close" src="images/close.png" alt="">
+    </header>
+    <div class="contain">
+        <ul class="days">
+        </ul>
+        <div class="process">
+            <div class="day">
+                <div class="am">
+                    <img class="moon" src="images/moon.png" alt="">
+                    <div id="killing" class="step ac">
+                        <a href="#"> 杀手杀人</a>
+                    </div>
+                </div>
+                <div class="pm">
+                    <img class="sun" src="images/sun.png" alt="">
+                    <div id="deadSay" class="step ac">
+                        亡灵发表遗言
+                    </div>
+                    <div id="playSay" class="step ac">
+                        玩家依次发言
+                    </div>
+                    <div id="voted" class="step ac">
+                        <a href="#">全名投票</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer1">
+        <div class="btns">
+            <button class="btn1">
+                <a href="#">结束游戏</a>
+            </button>
+            <button class="btn2">
+                <a href="#">法官日记</a>
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="./state-machine.js"></script>
+<script src="../jquery/dist/jquery.min.js"></script>
+<script src="task2-5.js"></script>
