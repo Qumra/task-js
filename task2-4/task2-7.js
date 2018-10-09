@@ -47,6 +47,8 @@ $(function () {
             }
         }
         if (killer > people || killer == 0) {
+            day++;
+            sessionStorage.setItem('day', JSON.stringify(day));
             alert("游戏结束")
             window.location = "task2-8.html";
         } else {

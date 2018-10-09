@@ -41,25 +41,26 @@ $(function () {
         </div>
     </div>`
         $(".section2").append(model);
+        if (day > 1 && killed_list.length == day && voted_list.length == day) {
+            var modules = `<div class="list-info">
+            <div class="info">
+                <p class="title"><span class="tt">第${hanzi[day]}天</span></p>
+                <p>晚上：${killed_list[day - 1].number}号被杀手杀死，${killed_list[day - 1].number}号是${killed_list[day - 1].role}</p>
+                <p>白天：${voted_list[day - 1].number}号被全民投票杀死，${voted_list[day - 1].number}号是${voted_list[day - 1].role}</p>
+            </div>
+        </div>`
+            $(".section2").append(modules);
+        } else if (day > 1 && killed_list.length == day && voted_list.length < day){
+            var modules = `<div class="list-info">
+            <div class="info">
+                <p class="title"><span class="tt">第${hanzi[day]}天</span></p>
+                <p>晚上：${killed_list[day - 1].number}号被杀手杀死，${killed_list[day - 1].number}号是${killed_list[day - 1].role}</p>
+            </div>
+        </div>`
+            $(".section2").append(modules);
+        }
     }
-    if (day > 1 && killed_list.length == day && voted_list.length == day) {
-        var modules = `<div class="list-info">
-        <div class="info">
-            <p class="title"><span class="tt">第${hanzi[day]}天</span></p>
-            <p>晚上：${killed_list[day - 1].number}号被杀手杀死，${killed_list[day - 1].number}号是${killed_list[day - 1].role}</p>
-            <p>白天：${voted_list[day - 1].number}号被全民投票杀死，${voted_list[day - 1].number}号是${voted_list[day - 1].role}</p>
-        </div>
-    </div>`
-        $(".section2").append(modules);
-    } else if (day > 1 && killed_list.length == day && voted_list.length < day){
-        var modules = `<div class="list-info">
-        <div class="info">
-            <p class="title"><span class="tt">第${hanzi[day]}天</span></p>
-            <p>晚上：${killed_list[day - 1].number}号被杀手杀死，${killed_list[day - 1].number}号是${killed_list[day - 1].role}</p>
-        </div>
-    </div>`
-        $(".section2").append(modules);
-    }
+    
         $(".btn1").click(function () {
             sessionStorage.clear();
             window.location.href = "task2-1.html"
