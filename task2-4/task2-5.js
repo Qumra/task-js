@@ -150,11 +150,18 @@ $(function () {
     $("li").click(function(){
         $(this).next().toggle()
     })
-    $(".btn1").click(function(){
+    $(".btn1, #close").click(function(){
         sessionStorage.clear();
         window.location.href = "task2-1.html"
     })
-
+    $("#back").click(function(){
+        sessionStorage.removeItem("day");
+        sessionStorage.removeItem("step");
+        sessionStorage.removeItem("killed_list");
+        sessionStorage.removeItem("voted_list");
+        sessionStorage.removeItem("progress");
+        window.location.href = "task2-4.html"
+    })
 })
 //状态机
 // $(document).ready(function () {
