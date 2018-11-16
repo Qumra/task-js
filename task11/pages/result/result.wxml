@@ -1,0 +1,28 @@
+<!--pages/result/result.wxml-->
+<view>{{occupations[0][0].name}}</view>
+<view class="title">最适合你的职业推荐</view>
+<!-- 头部tab栏 -->
+<scroll-view class='tab' scroll-x="true" scroll-left="{{scrollLeft}}" scroll-with-animation="true">
+  <view class="tab-item {{currentTab==0 ? 'active' : ''}}" data-tab="0" bindtap="setCurrentTab">
+    <text class="">{{occupations[0].name}}</text>
+  </view>
+  <view class="tab-item {{currentTab==1 ? 'active' : ''}}" data-tab="1" bindtap="setCurrentTab">
+    <text class="">{{occupations[1].name}}</text>
+  </view>
+  <view class="tab-item {{currentTab==2 ? 'active' : ''}}" data-tab="2" bindtap="setCurrentTab">
+    <text class="">{{occupations[2].name}}</text>
+  </view>
+</scroll-view>
+<swiper class='tab-content' current="{{currentTab}}" bindchange="changeTab">
+  <swiper-item class='tab-content-item' wx:for="{{occupations}}" wx:key="{{item.id}}">
+    <view class='content'>
+      <view class='row'>职业门槛：{{item.threshold}}星</view>
+      <view class='row'>难易程度：{{item.difficult}}星</view>
+      <view class='row'>成长周期：{{item.cycle}}</view>
+      <view class='row'>求贤企业：{{item.company}}家</view>
+      <view class='row line'><text class='nwrap'>入学基础</text>：<view>{{item.basis}}</view></view>
+      <view class='row line' ><text>薪资待遇</text>：<view ><view wx:for="{{item.salary}}" wx:for-item="itm">{{itm.time}}:{{itm.salary}}k</view></view> </view>
+      <text class='right'>在学{{item.onlineClassCount}}人</text>
+    </view>
+  </swiper-item>
+</swiper>

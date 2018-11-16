@@ -1,0 +1,57 @@
+/* pages/result/result.wxss */
+.title {
+  text-align: center;
+  line-height: 50rpx;
+  padding: 30rpx 0;
+  border-bottom: 1px solid #ccc;
+}
+/* 头部tab栏 */
+.tab {
+ height: 68rpx;
+ width: 100%;
+ background-color: #fff;
+ border-bottom:2rpx solid #e6e6e6; 
+ margin-bottom: 20rpx;
+}
+.tab-item {
+  display: inline-block;
+ width: 33%;
+ font-size:30rpx;
+ text-align:center;
+ color: #9b9b9b;
+ line-height: 58rpx;
+}
+.tab-item text {
+  display: inline-block;
+  width: 90rpx;
+  height: 60rpx;
+  font-size: 40rpx; 
+}
+.tab-item.active {
+  color:#333;
+  border-bottom:8rpx solid green;
+}
+/* 内容 */
+swiper {
+  height: 90vh;
+}
+.content {
+  padding-left: 20rpx;
+}
+.content .row {
+  padding:20rpx;
+  border-bottom: 2rpx solid #ccc;
+}
+.nwrap {
+  white-space:nowrap;
+
+}
+.line {
+   display: flex;
+}
+.right {
+  float: right;
+  color: #999;
+  margin-top: 20rpx;
+  margin-right: 20rpx;
+}

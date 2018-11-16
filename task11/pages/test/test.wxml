@@ -1,0 +1,10 @@
+                                                                                                                                                                                              <!--pages/test/test.wxml-->
+<view class="title">试试什么职业最适合你</view>
+   <picker wx:for="{{score}}"  data-current="{{index}}" bindchange="bindPickerChange" value="{{item.index}}" range="{{item.option}}" range-key="{{'name'}}">
+    <view class="picker">
+      {{item.name}}{{item.option[item.index].name}}
+    </view>
+  </picker>  
+  <navigator url='../result/result' bindtap='goTest'>
+    <button type="primary" size="{{primarySize}}">选好了，去测试</button>
+  </navigator>

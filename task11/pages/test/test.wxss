@@ -1,0 +1,15 @@
+/* pages/test/test.wxss */
+.title {
+  text-align: center;
+  line-height: 50rpx;
+  padding: 30rpx 0;
+  border-bottom: 1px solid #ccc;
+}
+.picker {
+  letter-spacing: 20rpx;
+  padding: 30rpx 20rpx;
+  border-bottom: 1px solid #ccc;
+}
+button {
+  margin-top:50rpx; 
+}
