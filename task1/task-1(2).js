@@ -28,7 +28,7 @@ function getArrItem(arr, num) {
 }
 // 2.随机取得小格子中的3个格子
 console.log(getArrItem(arr, 3));
-console.log(getArrItem(arr_color, 3));
+// console.log(getArrItem(arr_color, 3));
 // 设置定时器
 var timer = null;
 function one() {

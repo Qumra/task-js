@@ -1,6 +1,7 @@
 $(function () {
     var data = JSON.parse(sessionStorage.getItem("sumPeople"));
     console.log(data);
+    // 遍历总人数，渲染格子
     for (var i = 0; i < data.length; i++) {
         var modules = `  <div class="hbox">
         <div class="box">
@@ -10,6 +11,7 @@ $(function () {
 </div>`
         $(".main").append(modules);
     }
+    // 游戏前的初始化
     function init() {
         var temp = [];
         var day = 1;

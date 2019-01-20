@@ -94,6 +94,7 @@ $(function () {
         }
         else {
             alert("请按照步骤来");
+            console.log(fsm.state);
         }
     });
     $("#voted").click(function () {
@@ -106,6 +107,7 @@ $(function () {
         }
         else {
             alert("请按照步骤来");
+            console.log(fsm.state);
         }
     });
 })
@@ -163,119 +165,4 @@ $(function () {
         window.location.href = "task2-4.html"
     })
 })
-//状态机
-// $(document).ready(function () {
-//     var fsm = {
-//         //   初始化
-//         state: JSON.parse(localStorage.getItem(('step'))),
-//         timetokill: function () {
-//             switch (fsm.state) {
-//                 case "none":
-//                     console.log(fsm.state);
-//                     fsm.state = "kill";
-//                     $("#killing").addClass("actived");
-//                     localStorage.setItem('step', JSON.stringify(fsm.state));
-//                     window.location.href = "task2-6.html";
-//                     break;
-//                 case "kill":
-//                     alert("请勿重复点击");
-//                     break;
-//                 case "speak":
-//                 case "vote":
-//                     alert("请按照步骤来");
-//                     break;
-//             }
-//         },
-//         timetospeak: function () {
-//             switch (fsm.state) {
-//                 case "kill":
-//                     fsm.state = "speak";
-//                     for (var i = 0; i < data.length; i++) {
-//                         if (data[i].role == "平民" && data[i].iskilled == true && data[i].days == day) {
-//                             var info = `<p>${data[i].num}号被杀手杀死，真实身份是${data[i].role}</p>`;
-//                             $(".am").append(info);
-//                         }
-//                     }
-//                     $("#deadSay").addClass("actived");
-//                     $('.mask').removeClass("hide");
-//                     $('#txt').text("请死者亮明身份并发表遗言");
-//                     $(".btns").children().click(function () {
-//                     $(".mask").removeClass('db').addClass("hide");
-//                     })
-//                     break;
-//                 case "speak":
-//                     alert("请勿重复点击");
-//                     break;
-//                 case "none":
-//                 case "vote":
-//                     alert("请按照步骤来");
-//                     break;
-//             }
-//         },
-//         timetotalk: function () {
-//             switch (fsm.state) {
-//                 case "speak":
-//                     fsm.state = "vote";
-//                     $("#playSay").addClass("actived");
-//                     $('.mask').removeClass("hide");
-//                     $('#txt').text("请玩家依次发言");
-//                     $(".btns").children().click(function () {
-//                     $(".mask").removeClass('db').addClass("hide");
-//                     })
-//                     break;
-//                 case "none":
-//                 case "kill":
-//                     alert("请按照步骤来");
-//                     break;
-//                 case "vote":
-//                     alert("请勿重复点击");
-//                     break;
-//             }
-//         },
-//         timetovote: function () {
-//             switch (fsm.state) {
-//                 case "vote":
-//                     fsm.state = "none";
-//                     $("#vote").addClass("actived");
-//                     window.location.href = "task2-7.html";
-//                     break;
-//                 case "speak":
-//                 case "kill":
-//                 case "none":
-//                     alert("请按照步骤来");
-//                     break;
-//             }
-//         }
 
-
-//     };
-// $("#killing").click(function () {
-//     if ($(this).hasClass("actived")) {
-//         alert("已经点击过了~")
-//     } else {
-//         fsm.timetokill();
-//     }
-// });
-// $("#deadSay").click(function () {
-//     if ($(this).hasClass("actived")) {
-//         alert("已经点击过了~")
-//     } else {
-//         fsm.timetospeak();
-//     }
-// });
-// $("#playSay").click(function () {
-//     if ($(this).hasClass("actived")) {
-//         alert("已经点击过了~")
-//     } else {
-//         fsm.timetotalk();
-//     }
-// });
-// $("#vote").click(function () {
-//     if ($(this).hasClass("actived")) {
-//         alert("已经点击过了~")
-//     } else {
-//         fsm.timetovote();
-//     }
-// });
-
-// })

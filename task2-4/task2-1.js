@@ -27,9 +27,9 @@ $(function () {
     //隐式遍历
     lis.click(function () {
         // console.log(1111);
-        var index = lis.index();
+        var index = $(this).index();
         $(this).addClass('active').siblings().removeClass('active');
-        // console.log(index);
+        console.log(index);
         $(".tab").eq(index).addClass('current').siblings().removeClass('current');
     });
     // 向右点击

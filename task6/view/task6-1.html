@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>后台页</title>
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/task6-1.css">
+    <link rel="stylesheet" href="../css/article.css">
+    <script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.staticfile.org/angular.js/1.4.6/angular.min.js"></script>
+    <script src="https://cdn.staticfile.org/angular-ui-router/1.0.20/angular-ui-router.min.js"></script> 
+    <script src="https://cdn.staticfile.org/bootbox.js/4.4.0/bootbox.min.js"></script>
+    <script src="https://cdn.staticfile.org/angular-file-upload/2.5.0/angular-file-upload.min.js"></script>
+    <script src="https://cdn.staticfile.org/wangEditor/3.1.1/wangEditor.min.js"></script>
+    <script src="../js/angular-locale_zh-cn.js"></script>
+    <script src="../js/route.js"></script>
+    <script src="../js/sidebar.js"></script>
+    <script src="../js/service/http.js"></script>
+    <script src="../js/filter/filter.js"></script>
+    <script src="../js/service/path.js"></script>
+    <script src="../js/service/request.js"></script>
+    <script src="../js/article.js"></script>
+    <script src="../js/add.js"></script>
+    <script src="https://cdn.staticfile.org/angular-ui-bootstrap/1.3.3/ui-bootstrap-tpls.min.js"></script>
+   
+</head>
+
+<body>
+    <div class="warp">
+            <div class="left">
+                    <div class="title">萝卜多后台管理系统</div>
+                    <div ng-controller="AccordionDemoCtrl">
+                            <ul class="panel-group list-none">
+                                <li class="panel panel-default" ng-cloak ng-repeat="group in groups track by $index" ng-click ="getHomeTitle($index)">
+                                    <div class="panel-heading">{{group.head}}</div>
+                                    <div 
+                                        class="panel-body main-color"
+                                        ng-show="ggtitle == $parent.$index"
+                                        ng-repeat="item in group.content track by $index" 
+                                        ng-click="getHomeContent(item.list, $parent.$index)"
+                                        ng-class="{active:ggcontent === item.list}">
+                                        <a href="" ui-sref="{{item.url}}">{{item.list}}</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    <!-- <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                        <span class="glyphicon glyphicon-pencil"></span>&nbsp后台管理
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                   角色管理
+                                </div>
+                                <div class="panel-body " ui-sref="test">
+                                    模块管理
+                                </div>
+                                <div class="panel-body">
+                                    密码修改
+                                </div>
+                                <div class="panel-body">
+                                    账户管理 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
+                                        aria-expanded="false" aria-controls="collapseTwo">
+                                        <span class="glyphicon glyphicon-pencil"></span>&nbsp内容管理
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                    公司列表
+                                </div>
+                                <div class="panel-body">
+                                    职位列表
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"
+                                        aria-expanded="false" aria-controls="collapseThree">
+                                        <span class="glyphicon glyphicon-pencil"></span>&nbsp信息管理
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body" ui-sref="article">
+                                  Atricle列表
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="right">
+                    <div class="title">
+                        <ul>
+                            <li>管理员&nbsp&nbsp|</li>
+                            <li>admin&nbsp&nbsp|</li>
+                            <li class="glyphicon glyphicon-off"></li>
+                        </ul>
+                    </div>
+                   <div class="contain">
+                    <ui-view></ui-view>    
+                   </div>
+                </div>
+    </div>
+   
+   
+
+<script>
+    
+</script>
+</body>
+
+</html>

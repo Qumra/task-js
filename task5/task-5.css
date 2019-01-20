@@ -5,7 +5,7 @@
 html {
     font-size: 625%;
 }
-@media only screen and (max-width: 768px){
+/* @media only screen and (max-width: 768px){
     html {
         font-size: 625% !important;
     }
@@ -25,90 +25,62 @@ html {
         font-size: 278% !important;
     }
 }
- 
+  */
 body {
-    background-color: #eff0f4;
+    background-image: url("images/bg.jpg");
 }
-header {
-    display: flex;
-    width: 100%;
-    height: 0.88rem;
-    line-height: 0.88rem;
-    color: #fff;
-    background-color: #5fc0cd;
-    position: relative;
-}
-header .close {
-    font-size: .32rem;
+.login {
+    padding:15px;
+    width: 35%;
     position: absolute;
-    left: 0.3rem;
-}
-header .login {
-    font-size: .36rem;
-    position: absolute;
-    left: 50%;
-    margin-left: -0.36rem;
-}
-header .sign {
-    font-size: .32rem;
-    position: absolute;
-    right: 0.3rem;
-}
- .tel,.password {
-    position: relative;
-    width: 100%;
-    height: 1rem;
+    top: 15%;
+    left: 30%;
     background-color: #fff;
-    margin-top: 0.16rem;
+    border-radius: 10px;
 }
-.tel input,.password input {
-    height: .54rem;
-    border: none;
-    border-left: 2px solid #eff0f4;
-    padding-left: .35rem;
-    margin-left: 1.15rem;
-    font-size: .32rem;
-    color: #999;
+.login img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.login .user {
+    margin-bottom: 20px;
+}
+.login .user,.login .password {
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    height: 80px;
+    position: relative;
+}
+.login .user img,.login .password img {
     position: absolute;
-    top: 50%;
-    margin-top: -0.29rem;
+    top: 20px;
+    left: 20px;
+}
+.login .user input,.login .password input {
+    width: 80%;
+    position: absolute;
+    top: 10px;
+    left: 15%;
+    height: 60px;
+    border: none;
+    font-size: 20px;
     outline: none;
 }
- .tel i {
-    background: url(images/iphone.png) no-repeat;
-    width: .27rem;
-    height: .43rem;
-    background-size:100% 100%;
-    position:absolute;
-    top: 50%;
-    margin-top: -0.21rem;
-    margin-left: 0.4rem;
-}
-.password i {
-    background: url(images/locked2.png) no-repeat;
-    width: .29rem;
-    height: .43rem;
-    background-size:100% 100%;
-    position:absolute;
-    top: 50%;
-    margin-top: -0.15rem;
-    margin-left: 0.4rem;
-}
-
- button {
-    width: 100%;
-    height: 1rem;
+.login button {
+    width: 80%;
+    height: 80px;
+    background-color: #f40;;
+    border-radius: 5px;
     color: #fff;
-    font-size: .36rem;
-    background-color: #5fc0cd;
-    margin-top: 0.7rem;
+    font-size: 26px;
     border: none;
+    margin-left: 10%;
+    outline: none;
 }
-a {
-    text-decoration: none;
-    color: #5fc0cd;
-    font-size: .32rem;
-    float: right;
-    margin-right: 0.3rem;
-    margin-top: .2rem;
+.login #info {
+    font-size:20px;
+    margin-bottom: 20px;
+    color: #F59D53;
+    text-align: center;
 }
